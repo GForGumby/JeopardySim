@@ -245,11 +245,11 @@ def main():
     
     with col2:
         st.subheader("Success Probabilities")
-        dd_prob = st.slider("Your Daily Double success probability (%)", 0, 100, 50) / 100
+        dd_prob = st.slider("Your Daily Double success probability (%)", 0, 100, 80) / 100
         clue_prob = st.slider("Your subsequent clue probability (%)", 0, 100, 33) / 100
-        fj_prob = st.slider("Your Final Jeopardy success probability (%)", 0, 100, 50) / 100
-        opp1_fj_prob = st.slider("Opponent 1's Final Jeopardy probability (%)", 0, 100, 50) / 100
-        opp2_fj_prob = st.slider("Opponent 2's Final Jeopardy probability (%)", 0, 100, 50) / 100
+        fj_prob = st.slider("Your Final Jeopardy success probability (%)", 0, 100, 60) / 100
+        opp1_fj_prob = st.slider("Opponent 1's Final Jeopardy probability (%)", 0, 100, 60) / 100
+        opp2_fj_prob = st.slider("Opponent 2's Final Jeopardy probability (%)", 0, 100, 60) / 100
     
     if st.button("Run Simulation"):
         with st.spinner("Running simulations..."):
